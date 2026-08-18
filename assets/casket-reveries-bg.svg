@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Casket of Reveries modded fantasy world background">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#08131d"/>
+      <stop offset="28%" stop-color="#122738"/>
+      <stop offset="62%" stop-color="#1a3c3c"/>
+      <stop offset="100%" stop-color="#0b171d"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="36%" r="26%">
+      <stop offset="0%" stop-color="#edf7ff" stop-opacity="0.95"/>
+      <stop offset="28%" stop-color="#c6f6ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#c6f6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mist" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7de7ff" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#ff6ab1" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3c4d59"/>
+      <stop offset="100%" stop-color="#1a252d"/>
+    </linearGradient>
+    <linearGradient id="grass" x1="0" x2="1">
+      <stop offset="0%" stop-color="#4cc793"/>
+      <stop offset="100%" stop-color="#214d3a"/>
+    </linearGradient>
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)"/>
+  <circle cx="760" cy="260" r="200" fill="url(#moonGlow)"/>
+  <circle cx="760" cy="260" r="86" fill="#eaf9ff" opacity="0.68"/>
+
+  <g opacity="0.72">
+    <path d="M0 550 C 180 500, 260 470, 420 510 S 720 570, 860 520 S 1180 470, 1600 540 L1600 900 L0 900 Z" fill="url(#grass)"/>
+    <path d="M0 620 C 180 610, 330 560, 540 610 S 920 650, 1240 610 S 1440 590, 1600 620 L1600 900 L0 900 Z" fill="#183f39" opacity="0.82"/>
+  </g>
+
+  <g opacity="0.7">
+    <path d="M100 680 L260 470 L430 680 Z" fill="#253846"/>
+    <path d="M350 700 L520 440 L670 700 Z" fill="#233641"/>
+    <path d="M680 710 L900 420 L1090 710 Z" fill="#22313d"/>
+    <path d="M980 700 L1180 460 L1365 700 Z" fill="#1d2d3c"/>
+  </g>
+
+  <g opacity="0.92">
+    <path d="M230 610 L332 500 L420 560 L360 690 Z" fill="#304555"/>
+    <path d="M790 620 L945 498 L1040 572 L980 690 Z" fill="#2d4651"/>
+    <path d="M1110 630 L1230 500 L1340 570 L1270 700 Z" fill="#2a3c4a"/>
+  </g>
+
+  <g opacity="0.78">
+    <rect x="118" y="510" width="36" height="172" fill="#273c47"/>
+    <rect x="350" y="548" width="28" height="140" fill="#2f434f"/>
+    <rect x="1010" y="520" width="34" height="160" fill="#2d4651"/>
+    <rect x="1328" y="535" width="28" height="146" fill="#2b3e4a"/>
+  </g>
+
+  <g opacity="0.6">
+    <path d="M250 420 L298 360 L340 420 Z" fill="#71e7d1"/>
+    <path d="M495 375 L540 330 L585 375 Z" fill="#89d4ff"/>
+    <path d="M1225 365 L1270 310 L1318 365 Z" fill="#ff85c2"/>
+    <path d="M1090 440 L1128 392 L1168 440 Z" fill="#f4d28d"/>
+  </g>
+
+  <g opacity="0.38" filter="url(#softBlur)">
+    <ellipse cx="300" cy="248" rx="180" ry="110" fill="url(#mist)"/>
+    <ellipse cx="980" cy="300" rx="210" ry="120" fill="url(#mist)"/>
+    <ellipse cx="760" cy="650" rx="540" ry="120" fill="url(#mist)"/>
+  </g>
+
+  <g opacity="0.85">
+    <path d="M0 760 L1600 760" stroke="#8ae8ff" stroke-opacity="0.2" stroke-width="2"/>
+    <path d="M0 790 L1600 790" stroke="#ff6ab1" stroke-opacity="0.16" stroke-width="1.5"/>
+  </g>
+
+  <rect width="1600" height="900" filter="url(#grain)" opacity="0.75"/>
+</svg>
